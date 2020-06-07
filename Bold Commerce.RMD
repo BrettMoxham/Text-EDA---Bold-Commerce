@@ -248,10 +248,8 @@ The issue with filtering to the negative reviews only is that because there are 
 Word clouds are hot right now. They are an easy way to visualize text, with the larger the word, the more frequently it appears. Lets take a look at a word cloud generated from these reviews.
 
 
-```{r}
+```{r, eval=FALSE}
 library(wordcloud2)
-
-
 tidy_review_word_count <- tidy_reviews %>% 
   filter(!word %in% c("bold", "app"),
          !str_detect(word, "^[0-9]+$")) %>% 
@@ -259,5 +257,10 @@ tidy_review_word_count <- tidy_reviews %>%
 
 set.seed = 1234
 wordcloud2(tidy_review_word_count, shape = "circle")
+```
+
+![](bold_wordcloud.png)
+
+```{r}
 ```
 
