@@ -19,9 +19,9 @@ knitr::opts_chunk$set(echo = TRUE,
 
 ## Outline
 
-This project is an study on the reviews from the Bold Commerce subscription app on Shopify. The reviews were scraped on 27-05-2020. 
+This project is a study on the reviews of the Bold Commerce subscription app on Shopify. The reviews were scraped on 27-05-2020. 
 
-The objective of this study is to glean an understanding into what customers are saying about the app, in an effort to identify an areas where the app is succeding and where it could be improved. 
+The objective of this study is to glean an understanding into what customers are saying about the app, in an effort to identify an areas where the app is succeeding and where it could be improved. 
 
 
 ## First Steps
@@ -53,7 +53,7 @@ scraped_reviews_clean %>%
 ```
 
 
-We have  ```r max(scraped_reviews_clean$review_id) ``` unqiue reviews, with the first review issued at ```r min(scraped_reviews_clean$date_posted)``` and the newest review, as of time of scraping, posted on ```r max(scraped_reviews_clean$date_posted)```
+We have  ```r max(scraped_reviews_clean$review_id) ``` unique reviews, with the first review issued at ```r min(scraped_reviews_clean$date_posted)``` and the newest review, as of time of scraping, posted on ```r max(scraped_reviews_clean$date_posted)```
 
 
 Lets see what the distribution is for ratings. 
@@ -262,5 +262,7 @@ wordcloud2(tidy_review_word_count, shape = "circle")
 ![](bold_wordcloud.png)
 
 ```{r}
+
+file.rename("Bold-Commerce.md", "README.md")
 ```
 
