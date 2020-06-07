@@ -262,7 +262,6 @@ wordcloud2(tidy_review_word_count, shape = "circle")
 ![](bold_wordcloud.png)
 
 ```{r}
-
 file.rename("Bold-Commerce.md", "README.md")
 ```
 
