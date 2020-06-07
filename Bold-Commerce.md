@@ -212,7 +212,7 @@ trigram_sep %>% filter(!word1 %in% stopwords) %>% filter(!word2 %in% stopwords) 
 
 ![](Bold-Commerce_files/figure-html/unnamed-chunk-10-2.png)<!-- -->
 
-Looking at both our bi and tri-grams we can see a very positive reception to the app. Phrases such as ***super helpful*** and *** amazing customer service*** are prevelant. We would expect positive messages like these to dominate this analysis as we saw that the vast majority of reviews were highly positive. 
+Looking at both our bi and tri-grams we can see a very positive reception to the app. Phrases such as ***super helpful*** and ***amazing customer service*** are prevelant. We would expect positive messages like these to dominate this analysis as we saw that the vast majority of reviews were highly positive. 
 
 
 Lets filter out those positive messages, and only look at the negatives. This will give us an understanding of what issues we are seeing arrise in the negative messages. We can use the same methadology as the singular word reivew, by assuming that a star rating of 3 or less indicates a negative review. 
